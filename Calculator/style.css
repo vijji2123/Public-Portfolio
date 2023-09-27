@@ -1,0 +1,62 @@
+h1{
+    text-align: center;
+    font-size: 80px;
+    font-weight: 700;
+    font-family:sans-serif;
+    -webkit-text-stroke: 4px rgb(35, 225, 18);
+    color: transparent;
+    margin: 0;
+    padding: 0;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDCcN69mp0N7Vi45I_OAKdDIRFqZRXitqZewHSKgcT&s);
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.container{
+    margin: 0 auto;
+    width: 500px;
+    /* height: 73vh; */
+    /* border: 5px solid black; */
+    border-radius: 10px;
+    background-color: blueviolet;
+    padding: 5px 5px;
+}
+input{
+    color: blue;
+}
+#result{
+    /* width: 499px; */
+    height: 80px;
+    background-color: red;
+    font-size: 32px;
+    text-align: end;
+    /* margin: 5px; */
+
+    /* border: 2px solid red; */
+}
+.buttonCage{
+    width: 499px;
+    height: 70vh;
+    background-color: orange;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    justify-content: space-evenly;
+    
+}
+button{
+    margin-top: 10px;
+    width: 90px;
+    height: 60px;
+    font-size: 32px;
+    border-radius: 15px;
+    border: transparent;
+    cursor: pointer;
+}
+
+button:hover{
+ background-color: grey;
+ box-shadow: 5px 5px 5px greenyellow;
+ transition: .21s ease-in-out;
+}

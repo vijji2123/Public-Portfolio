@@ -1,0 +1,375 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    /* display:flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    background-color: #2b2a2f;
+}
+.top{
+    width: 100%;
+    height: 280px;
+    /* border: 3px solid yellow; */
+    background-image: url(./bgimg1.jpg);
+    background-size: cover;
+    background-blend-mode: color;
+    filter: blur(3px);
+    
+}
+#am{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 5;
+    width: 45%;
+    padding: 40% 0;
+    text-align: center;
+    font-family: system-ui;
+    font-size: 100;
+    -webkit-text-stroke: 4px rgb(112, 106, 106);
+    color: transparent;
+    background-image: url(https://media.istockphoto.com/id/1176012574/photo/clear-blurred-background-with-warm-colors-blend-clean-defocused-backdrop.jpg?s=612x612&w=0&k=20&c=Am3Gqo31N0amVFObfGb2bit_06UiTMHz0W6Ccj0C4IY=)  ;
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
+
+}
+.about_container{
+    width: 100%;
+    padding: 50px 8%;
+}
+
+.about_container .about_contents{
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    grid-gap: 70px;
+}
+.about_contents .imageSection{
+    position: relative;
+    min-width: 300px;
+    height: 380px;
+}
+.imageSection img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    z-index: 2;
+}
+
+.about_contents .imageSection::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    outline: 3px solid #787cb5;
+    top: 15px;
+    left: 15px;
+    z-index: 1;
+}
+
+.infoSection h1{
+    color: #dedce1;
+    font-size: 38px;
+    font-family: helvetica;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 5px;
+    position: relative;
+}
+.imageSection h1::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    top: 110%;
+    left: 0;
+    background-color: #aaabb0;
+
+}
+
+.imageSection h1::after{
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 3px;
+    top: calc(110% 1px);
+    left: 0px;
+    background-color: #787cb5;
+    
+}
+.infoSection h2{
+    font-family: helvetica; 
+    font-size: 28px;
+    font-weight: 600;
+    color: #787cb5;
+    padding: 14px 0px 15px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+.infoSection p{
+    color: #2ceed7 ;
+    font-size: 22px;
+    line-height: 1.2;
+    text-align: justify;
+    padding-bottom: 8px;
+}
+
+.personalInfo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px 20px;
+    margin-top: 14px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #787cb5;
+
+}
+.personalInfo div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.personalInfo div span{
+    color: #0c2fdd;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-family: fantasy;
+    font-weight: 700x;
+}
+/* .infoSection button{
+    min-width: 150px;
+    padding: 8px 18px;
+    border: 1px solid #787cb5;
+    border-radius: 25px;
+    font-size: 18px;
+    background-color: #2b2a2f;
+    color: #aaabb0;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.4s;
+    margin-top: 20px;
+} */
+.infoSection button:hover{
+    color: #787cb5;
+    border-color: #aaabb0;
+}
+
+/* sadhguidhvn;adoigbhstr;hbo */
+
+
+.btn{
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0;
+    position: relative;
+    margin-top: 5px;
+    font-family: system-ui ;
+}
+.btn span{
+    display: block;
+    padding:10px 13px;
+    position: relative;
+}
+.btn:before,
+.btn:after,
+.btn span:before,
+.btn span:after{
+    content: "";
+    background: #787cb5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.15s ease-in-out 0s;
+}
+.btn:before,
+.btn:after{
+    width: 5px;
+    height: 0;
+}
+.btn span:before,
+.btn span:after{
+    width: 0;
+    height: 5px;
+    transition-delay: 0.15s;
+}
+.btn:after{
+    top: auto;
+    left: auto;
+    right: 0;
+    bottom: 0;
+}
+.btn span:before{
+    right: 0;
+    left: auto;
+}
+.btn span:after{
+    top: auto;
+    bottom: 0;
+}
+.btn:hover:before,
+.btn:hover:after{
+    height: 100%;
+    transition-delay: 0.15s;
+    
+}
+.btn:hover span:before,
+.btn:hover span:after{
+    width: 100%;
+    transition-delay: 0s;
+}
+
+/* dsghevbdvdfb */
+
+
+
+  /* .imageSection {
+    width: 400px;
+    height: 250px;
+    color: #fff;
+    background: #262626;
+    position: relative;
+    margin: 150px;
+    padding: 30px;
+  } */
+
+  .imageSection::after,
+  .imageSection::before {
+    content: "";
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000);
+    background-size: 400%;
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    z-index: -1;
+    animation: animated-shadow 10s linear infinite alternate;
+  }
+
+  .imageSection::after {
+    filter: blur(30px);
+  }
+
+  @keyframes animated-shadow {
+    0% {
+      background-position: 0 0;
+    }
+
+    50% {
+      background-position: 100% 0;
+    }
+
+    100% {
+      background-position: 0 0;
+    }
+  }
+
+/* skill start
+html{
+    --html_progress:0deg;
+    --css_progress:0deg;
+    --bootstrap_progress:0deg;
+    --js_progress:0deg;
+}
+@property --html_progress{
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+}
+@property --css_progress{
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+}
+@property --bootstrap_progress{
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+}
+@property --js_progress{
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+}*/
+.skill_body, .container, .card, .circle, .counter{
+     margin-top: 50px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 75%;
+    justify-content: space-around;
+
+}
+.card{
+    width: 200px;
+    height: 360px;
+    background-color: #000;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #666060;
+    flex-direction: column;
+}
+.circle{
+    position: relative;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background-color: crimson;
+    animation: animate 3s linear forwards;
+}
+.card:nth-child(1) .circle{
+ background: conic-gradient(#e50e0e 0turn var(--html_progress),#202020 0turn);   
+}
+
+
+.card:nth-child(2) .circle{
+    background: conic-gradient(#264de4 0turn var(--css_progress),#202020 0turn);   
+   }
+
+   
+.card:nth-child(3) .circle{
+    background: conic-gradient(#ffff00 0turn var(--bootstrap_progress),#202020 0turn);   
+   }
+
+   
+.card:nth-child(4) .circle{
+    background: conic-gradient(#48bd11 0turn var(--js_progress),#202020 0turn);   
+   }
+
+   @keyframes animate{
+    100%{
+        --html_progress: calc(calc(92/100) * 360deg);
+        --css_progress: calc(calc(80/100) * 360deg);
+        --bootstrap_progress: calc(calc(65/100) * 360deg);
+        --js_progress: calc(calc(90/100) * 360deg);
+    }
+   }
+
+.label{
+    color: #bbb;
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 30px;
+}
+.counter{
+    background-color: #000;
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    font-size: 26px;
+    color: white;
+} */
+

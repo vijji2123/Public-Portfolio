@@ -1,0 +1,526 @@
+*{
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+
+nav{
+    /* border: 5px solid red; */
+    background-color: rgba(1, 33, 64, 0.8);
+    height: 85px;
+    position: fixed;
+    width: 100%;
+
+}
+.contain{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+.logo{
+    font-family: 'Permanent Marker', cursive;
+    display: inline-block;
+    /* margin-left: 50px; */
+}
+.logo > .logo-up > span{
+    font-size: 40;
+    color: blue;
+}
+#wheeler{
+    display: inline-block;
+    font-size: 35;
+    color: rgb(13, 167, 13);
+}
+.logo-up{
+    position: relative;
+
+
+}
+#paradise{
+    font-size: 40;
+    position: absolute;
+    top: 32px;
+    color:orangered;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+
+}
+#text{
+    width: 250px;
+    height: 45px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 23px;
+    color: white;
+    background-color: rgba(237, 221, 221, 0.875);
+
+}
+#text::-webkit-input-placeholder{
+    font-size: 20px;
+    text-align: center; 
+    color: white;
+    text-align: center;
+}
+#button{
+    width: 100px;
+    height: 40px;
+    font-weight: 400;
+    font-family: sans-serif;
+    color: white;
+    background-color: rgb(72, 72, 66);
+    cursor: pointer;
+    margin-left: 5px;
+
+}
+#button:hover{
+    color: orangered;
+    background-color: blue;
+    transition: 0.5s ease-in-out;
+}
+    
+.home{
+    display: inline-block;
+    margin-right: 50px;
+    margin-top: 15px;
+
+}
+a{
+    text-decoration: none;
+    font-size: 26;
+    color: burlywood;
+    padding:  0 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    align-items: center;
+}
+a:hover{
+    color: white;
+    /* background-color: black; */
+    border: 5px solid rgb(16, 179, 244);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    transition: 0.3s   ease-in-out  ;
+}
+
+main{
+    margin: 150px 0;
+}
+.section1 > img{
+    width: 100%;
+}
+.one{
+    margin-top: 100px;
+}
+
+.link-photo{
+    display: flex;
+    justify-content: space-around;
+    vertical-align: middle;
+}
+.photo1{
+    width: 600px;
+    height: 400px;
+    display: inline-block;
+    box-shadow:  10px 10px 15px gray, 10px 10px 10px gray;
+
+}
+.logo-kawasaki{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.logo-kawasaki > img{
+    width: 500px;
+}
+
+.photo1 > img{
+    height: 400px;
+}
+
+.link1{
+    display: inline-block;
+    /* height: 900px; */
+    /* border: 2px solid black; */
+}
+
+.text1{
+   width: 100%;
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 1.5;
+   font-family: sans-serif;
+   color: black;
+   margin-top: 20px;
+}
+
+/* MAIN 3 */
+
+.main3{
+    margin: 100px 0;
+   
+}
+
+.heading-list{
+    display: flex;
+    justify-content: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.heading-list > h1{
+    font-size:50px;
+   
+}
+.heading-list > h1:hover{
+     color: aqua;
+     /* font-size: 32; */
+     transition: .51s ease-in;
+     cursor: pointer;
+     border: 5px solid black;
+     border-top: none;
+     border-left: none;
+     border-right: none;
+}
+
+
+
+.boxes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    column-gap: 10px;
+}
+
+
+.box{
+    width: 60%;
+    height: 250px;
+    margin: 50px 0;
+    display: flex;
+    border-radius: 10px;
+    box-shadow:  10px 10px 15px rgb(109, 231, 39), 10px 10px 10px rgb(52, 218, 52);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.box:hover{
+    transition: 0.3s ease-in;
+    width: 63%;
+    height: 265px;
+}
+
+.box-img{
+    width: 500px;
+}
+
+#imgbikes{
+    width: 400px;
+    height: 200px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+#imgbikes:hover{
+    animation:  2s ease-in-out;
+    width: 450px;
+    height: 225px;
+    cursor: pointer;
+}
+.bike-details{
+    font-family: sans-serif;
+    font-size: large;
+}
+
+.bike-details > h2{
+    margin-bottom: 20px;
+    margin-top: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.bike-details > h2:hover{
+    color: green;
+    font-size: 36px;
+    transition: .6s ease-in;
+}
+.bike-details > h3{
+    margin-bottom: 20px;
+    text-decoration: underline;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.bike-details > h3:hover{
+    color: rgb(30, 89, 207);
+    font-size: 24px;
+    transition: .6s ease-out;
+}
+
+
+/* Kawasaki css finish here */
+
+
+
+.ducati-logo{
+    display: flex;
+    justify-content: center;
+}
+
+.ducati-front{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.ducati-4{
+    box-shadow:  10px 10px 15px gray, 10px 10px 10px gray;
+    
+}
+
+
+.ducati-4 > img{
+    width: 750px;
+    height: 450px;
+}
+
+.ducati-paragraph{
+     width: 100%;
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 1.5;
+   font-family: sans-serif;
+   color: black;
+   margin-top: 20px;
+
+}
+
+.box1{
+    width: 60%;
+    height: 250px;
+    margin: 50px 0;
+    display: flex;
+    border-radius: 10px;
+    box-shadow:  10px 10px 15px rgb(235, 18, 18), 10px 10px 10px rgb(228, 25, 29);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.box1:hover{
+    transition: 0.3s ease-in;
+    width: 63%;
+    height: 265px;
+}
+
+.box-img{
+    width: 500px;
+}
+
+.bike-details1{
+    font-family: sans-serif;
+    font-size: large;
+}
+
+.bike-details1 > h2{
+    margin-bottom: 20px;
+    margin-top: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.bike-details1 > h2:hover{
+    color: rgb(223, 22, 52);
+    font-size: 36px;
+    transition: .6s ease-in;
+}
+.bike-details1 > h3{
+    margin-bottom: 20px;
+    text-decoration: underline;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.bike-details1 > h3:hover{
+    color: rgb(30, 89, 207);
+    font-size: 24px;
+    transition: .6s ease-out;
+}
+
+/* Ducati ends here */
+
+.ducati-logo{
+    display: flex;
+    justify-content: center;
+}
+
+.box2{
+    width: 60%;
+    height: 250px;
+    margin: 50px 0;
+    display: flex;
+    border-radius: 10px;
+    box-shadow:  10px 10px 15px rgb(20, 74, 220), 10px 10px 10px rgb(25, 106, 228);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.box2:hover{
+    transition: 0.3s ease-in;
+    width: 63%;
+    height: 265px;
+}
+
+.box-img{
+    width: 500px;
+}
+
+.bike-details2{
+    font-family: sans-serif;
+    font-size: large;
+}
+
+.bike-details2 > h2{
+    margin-bottom: 20px;
+    margin-top: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.bike-details2 > h2:hover{
+    color: rgb(223, 59, 22);
+    font-size: 36px;
+    transition: .6s ease-in;
+}
+.bike-details2 > h3{
+    margin-bottom: 20px;
+    text-decoration: underline;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.bike-details2 > h3:hover{
+    color: rgb(221, 36, 15);
+    font-size: 24px;
+    transition: .6s ease-out;
+}
+/* BMW ends here */
+
+
+
+
+.heading-list1{
+    display: flex;
+    justify-content: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.heading-list1 > h1{
+    font-size:70px;
+   
+}
+.heading-list1 > h1:hover{
+     color: rgb(23, 11, 132);
+     /* font-size: 32; */
+     transition: .51s ease-in;
+     cursor: pointer;
+     border: 5px solid rgb(250, 13, 13);
+     border-top: none;
+     border-left: none;
+     border-right: none;
+}
+.gallery-head{
+    font-size: 40px;
+    border: 5px solid red;
+}
+.rider{
+    width: 150px;
+    height: 150px;
+}
+
+.gallery{
+    /* border: 2px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: rgb(219, 216, 210);
+}
+.gallery-img{
+    width: 300px;
+    height: 250px;
+    margin-top: 20px;    
+}
+.gallery-img:hover{
+    box-shadow: 5px 7px 6px goldenrod;
+}
+
+/* Gallery Ends Here */
+
+.contact-us{
+    background-color: rgb(3, 11, 54);
+    color: white;
+    /* width: 100%;; */
+    /* height: 500px; */
+    margin-top: 70px;
+}
+.upper{
+    /* background-color: yellow; */
+    /* height: 400px; */
+    display: flex;
+}
+.map{
+    /* background-color: pink; */
+    /* height: 400px; */
+    /* width: 49%; */
+    padding: 0px 90px;
+}
+.map > span{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.formm{
+    height: 400px;
+    /* background-color: burlywood ; */
+    width: 49%;
+
+}
+form{
+    margin: 10px 50px;
+    font-family: serif;
+    font-size: 20;
+    font-weight: 700;
+    /* vertical-align: middle; */
+}
+input{
+    width: 350px;
+    height: 40px;
+    border-radius: 15px;
+    border: none;
+    text-align: center;
+    font-size: 20;
+    color: aqua;
+
+}
+
+textarea{
+    width: 350px;
+    font-size: 20;
+
+}
+#sub{
+    margin-left: 80px;
+    margin-top: 20px;
+}
+#sub:hover{
+    background-color: chocolate;
+}
+
+.about-us{
+    margin-top: 50px;
+    display: flex;
+     justify-content: space-around;
+}
+.last > h1{
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.last > h2{
+    font-size: 24px;
+    margin-top: 10px;
+    font-size: medium;
+}

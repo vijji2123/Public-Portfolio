@@ -1,0 +1,97 @@
+/* skill start */
+html{
+    --html_progress:0deg;
+    --css_progress:0deg;
+    --bootstrap_progress:0deg;
+    --js_progress:0deg;
+}
+@property --html_progress{
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+}
+@property --css_progress{
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+}
+@property --bootstrap_progress{
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+}
+@property --js_progress{
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+}
+.skill_body, .container, .card, .circle, .counter{
+    /* margin-top: 50px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 75%;
+    justify-content: space-around;
+
+}
+.card{
+    width: 200px;
+    height: 360px;
+    background-color: #000;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #666060;
+    flex-direction: column;
+}
+.circle{
+    position: relative;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background-color: crimson;
+    animation: animate 3s linear forwards;
+}
+.card:nth-child(1) .circle{
+ background: conic-gradient(#e50e0e 0turn var(--html_progress),#202020 0turn);   
+}
+
+
+.card:nth-child(2) .circle{
+    background: conic-gradient(#264de4 0turn var(--css_progress),#202020 0turn);   
+   }
+
+   
+.card:nth-child(3) .circle{
+    background: conic-gradient(#ffff00 0turn var(--bootstrap_progress),#202020 0turn);   
+   }
+
+   
+.card:nth-child(4) .circle{
+    background: conic-gradient(#48bd11 0turn var(--js_progress),#202020 0turn);   
+   }
+
+   @keyframes animate{
+    100%{
+        --html_progress: calc(calc(92/100) * 360deg);
+        --css_progress: calc(calc(80/100) * 360deg);
+        --bootstrap_progress: calc(calc(65/100) * 360deg);
+        --js_progress: calc(calc(90/100) * 360deg);
+    }
+   }
+
+.label{
+    color: #bbb;
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 30px;
+}
+.counter{
+    background-color: #000;
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    font-size: 26px;
+    color: white;
+}

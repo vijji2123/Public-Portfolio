@@ -1,0 +1,118 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me </title>
+    <link rel="stylesheet" href="styles.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="top">    </div>
+    <h1 id="am"></h1>
+    
+    <div class="about_container">
+        <div class="about_contents">
+
+            <section class="imageSection">
+                <img src="./bam.png">
+            </section>
+
+            <section class="infoSection">
+                <h1>who Am I? </h1>
+                <h2>Professional Web Designer & Developer</h2>
+                <p>Hello  &#128075</p>
+                <p>I'm Vijay Negi,</p>
+                <p>I am a creative designer and developer, who aims to work with small businesses and marginalized communities to bring their passions to life. I offer both design and development services of web applications or websites!</p>
+                <p>Technology leads,society follows. The move towards increasing inclusivity and diversity in the industry through representation is of importanec to me.</p>
+                <div class="personalInfo">
+                    <div><span>Name: </span><span> Vijay Negi</span></div>
+                    <div><span>Age: </span><span> 24 Years</span></div>
+                    <div><span>Email: </span><span >vijjinegi38@gmail.com</span></div>
+                    <div><span>Addrress: </span><span> Badarpur Border, New Delhi</span></div>
+                </div>
+<!-- 
+                <div class="button">
+                    <button>Download CV</button> -->
+                    <a href="" class="btn"><span class="btn-lg">Download CV</span></a>
+                </div>
+            </section>
+        </div>
+    </div>
+
+
+    <!-- Skills section starts now  -->
+<!-- <div class="skill_body">
+    <div class="container">
+
+        <div class="card">
+            <div class="circle">
+                <div class="counter" max_value = "92">92%</div>
+            </div>
+            <div class="label">HTML5</div>
+        </div>
+    
+
+
+    <div class="card">
+        <div class="circle">
+            <div class="counter" max_value = "80">80%</div>
+        </div>
+        <div class="label">CSS3</div>
+    </div>
+
+    <div class="card">
+    <div class="circle">
+        <div class="counter" max_value = "65">65%</div>
+    </div>
+    <div class="label">BOOTSTRAP</div>
+</div>
+
+<div class="card">
+    <div class="circle">
+        <div class="counter" max_value = "90">90%</div>
+    </div>
+    <div class="label">JAVASCRIPT</div>
+</div>
+</div>
+
+ -->
+<!-- </div> -->
+<!-- typed js script -->
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<script>
+    var typed = new Typed('#am',{
+        strings : ["WHO AM I ?","ABOUT ME"],
+        typeSpeed : 150,
+        backSpeed : 150,
+        looped : true
+    })
+</script>
+<!-- ends -->
+<script>
+    var counters = document.querySelectorAll('.counter');
+    counters.forEach(counter=>{
+        counter.innerHTML = '0';
+        function counterUpdate(){
+            var max_value = parseInt(counter.getAttribute('max_value'));
+            var count = parseInt(counter.innerHTML);
+            if(count< max_value){
+                counter.innerHTML =++count + '%';
+                setTimeout(counterUpdate,50)
+            }
+            else{
+                counter.innerHTML = max_value + '%';
+            }
+        }
+        counterUpdate();
+    })
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <h1>CALCULATOR</h1>
+    <div class="container">
+        <div >
+            <input type="text"  id="result">
+            <button style="display: inline;" onclick="clearResult()"> AC</button>
+
+        </div>
+        
+        <div class="buttonCage">
+            <button onclick="read('7')"> 7 </button>
+            <button onclick="read('8')"> 8 </button>
+            <button onclick="read('9')"> 9 </button>
+            <button onclick="read('/')"> / </button>
+
+            <button onclick="read('4')"> 4 </button>
+            <button onclick="read('5')"> 5 </button>
+            <button onclick="read('6')"> 6 </button>
+            <button onclick="read('*')"> * </button>
+
+            <button onclick="read('1')"> 1</button>
+            <button onclick="read('2')"> 2 </button>
+            <button onclick="read('3')"> 3 </button>
+            <button onclick="read('-')"> - </button>
+
+            <button onclick="read('0')"> 0 </button>
+            <button onclick="read('.')"> . </button>
+            <button onclick="calculateResult()"> = </button>
+            <button onclick="read('+')"> + </button>
+
+
+
+        </div>
+    </div>
+    
+</body>
+</html>
